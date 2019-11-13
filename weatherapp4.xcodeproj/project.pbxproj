@@ -15,6 +15,9 @@
 		B88D01BF23717E0C005E024C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88D01BD23717E0C005E024C /* LaunchScreen.storyboard */; };
 		B88D01CA23717E0C005E024C /* weatherapp4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88D01C923717E0C005E024C /* weatherapp4Tests.swift */; };
 		B88D01D523717E0C005E024C /* weatherapp4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88D01D423717E0C005E024C /* weatherapp4UITests.swift */; };
+		B88D01E5237187DE005E024C /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88D01E4237187DE005E024C /* AddTaskViewController.swift */; };
+		B8F0EDC7237B5F530053FCE5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0EDC6237B5F530053FCE5 /* MapViewController.swift */; };
+		B8F1109D2379FA3C00EC166A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1109C2379FA3C00EC166A /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B88D01D023717E0C005E024C /* weatherapp4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherapp4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88D01D423717E0C005E024C /* weatherapp4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherapp4UITests.swift; sourceTree = "<group>"; };
 		B88D01D623717E0C005E024C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88D01E4237187DE005E024C /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		B8F0EDC6237B5F530053FCE5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B8F1109C2379FA3C00EC166A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		B88D01B123717E0A005E024C /* weatherapp4 */ = {
 			isa = PBXGroup;
 			children = (
+				B88D01E4237187DE005E024C /* AddTaskViewController.swift */,
 				B88D01B223717E0A005E024C /* AppDelegate.swift */,
 				B88D01B423717E0A005E024C /* MasterViewController.swift */,
 				B88D01B623717E0A005E024C /* DetailViewController.swift */,
@@ -106,6 +113,8 @@
 				B88D01BB23717E0C005E024C /* Assets.xcassets */,
 				B88D01BD23717E0C005E024C /* LaunchScreen.storyboard */,
 				B88D01C023717E0C005E024C /* Info.plist */,
+				B8F1109C2379FA3C00EC166A /* LocationManager.swift */,
+				B8F0EDC6237B5F530053FCE5 /* MapViewController.swift */,
 			);
 			path = weatherapp4;
 			sourceTree = "<group>";
@@ -260,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88D01B723717E0A005E024C /* DetailViewController.swift in Sources */,
+				B8F0EDC7237B5F530053FCE5 /* MapViewController.swift in Sources */,
+				B88D01E5237187DE005E024C /* AddTaskViewController.swift in Sources */,
+				B8F1109D2379FA3C00EC166A /* LocationManager.swift in Sources */,
 				B88D01B523717E0A005E024C /* MasterViewController.swift in Sources */,
 				B88D01B323717E0A005E024C /* AppDelegate.swift in Sources */,
 			);

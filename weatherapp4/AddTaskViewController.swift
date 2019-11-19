@@ -23,11 +23,9 @@ class AddTaskViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var searchName: UITextField!
     @IBAction func searchCity(_ sender: Any) {
-        print("ddddddddddddd")
         self.searchh(name: searchName.text!){(value) in
             self.cities = value
             if self.searchName.placeholder != nil{
-               
                 self.searchh(name: self.current){(value1) in
                     self.cities.addObjects(from: value1 as! [Any])
                     print(self.cities)
@@ -96,10 +94,19 @@ class AddTaskViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
         
         self.locationManager.getPlace(for: exposedLocation) { placemark in
-            guard let placemark = placemark else { return }
-            
-            self.searchName.placeholder = "You are in " + placemark.locality! + ", " + placemark.country!
-            self.current = placemark.locality!
+            guard let placemark = placemark else {
+                return }
+            if placemark.locality == nil{
+                self.getNames(){(value1) in
+                    self.cities.addObjects(from: value1 as! [Any])
+                    print(self.cities)
+                    self.table.reloadData()
+                }
+            }
+            else{
+                self.searchName.placeholder = "You are in " + placemark.locality! + ", " + placemark.country!
+                self.current = placemark.locality!
+            }
         }
     }
     
